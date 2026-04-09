@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos | Pattucas Pet Shop 🐾</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Pattucas 🐾</a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="nav-btns">
+                    <a href="contato.html" class="btn btn-primary d-none-mobile">Agendar agora</a>
+                    <button class="hamburger" id="hamburger">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 40vh; height: auto; padding-bottom: 50px;">
+        <div class="container">
+            <div class="section-title" data-reveal style="margin-top: 100px;">
+                <h1>Depoimentos</h1>
+                <p>O que nossos clientes dizem sobre nós</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="testimonials-grid" id="testimonials-list">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card" data-reveal>
+                    <div class="testimonial-text">
+                        "O atendimento no Pattucas é impecável. Meu cachorro entra feliz no banho e sai cheiroso e super calmo!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Mariana Silva</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card" data-reveal>
+                    <div class="testimonial-text">
+                        "Encontrei tudo o que precisava para o meu gatinho. A equipe veterinária é muito atenciosa."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ricardo Gomes</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-form-card" data-reveal>
+                <h3>Deixe seu depoimento</h3>
+                <form id="testimonial-form">
+                    <div class="form-group">
+                        <label for="dep-name">Seu Nome</label>
+                        <input type="text" id="dep-name" placeholder="Ex: João Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dep-rating">Sua Nota</label>
+                        <select id="dep-rating" required>
+                            <option value="5">5 Estrelas</option>
+                            <option value="4">4 Estrelas</option>
+                            <option value="3">3 Estrelas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dep-msg">Sua Experiência</label>
+                        <textarea id="dep-msg" rows="4" placeholder="Conte-nos como foi sua visita..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Depoimento</button>
+                    <p id="dep-success" style="color: var(--success); display: none; margin-top: 15px; text-align: center; font-weight: 600;">
+                        Obrigado! Seu depoimento foi enviado com sucesso.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="logo" style="color: white;">Pattucas 🐾</h2>
+                    <p>Clientes felizes, pets amados.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pattucas Pet Shop - Todos os direitos reservados. 🐾</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+    <script src="script.js"></script>
+</body>
+</html>

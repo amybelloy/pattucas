@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Lojinha | Pattucas Pet Shop 🐾</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Pattucas 🐾</a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="nav-btns">
+                    <a href="contato.html" class="btn btn-primary d-none-mobile">Agendar agora</a>
+                    <button class="hamburger" id="hamburger">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 40vh; height: auto; padding-bottom: 50px;">
+        <div class="container">
+            <div class="section-title" data-reveal style="margin-top: 100px;">
+                <h1>Nossa Lojinha</h1>
+                <p>Variedade, qualidade e os melhores produtos para quem você ama</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="products">
+        <div class="container">
+            <div class="product-filters" data-reveal>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="alimentacao">Alimentação</button>
+                <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+                <button class="filter-btn" data-filter="higiene">Higiene</button>
+                <button class="filter-btn" data-filter="brinquedos">Brinquedos</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Produto 1: Ração -->
+                <div class="product-card" data-category="alimentacao" data-reveal>
+                    <div class="product-img">
+                        <img src="images/dog_food.png" alt="Ração Premium">
+                        <span class="product-badge">Top Seller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ração Premium Gold</h3>
+                        <p class="product-desc">Nutrição 100% completa para cães adultos.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 189,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2: Brinquedo -->
+                <div class="product-card" data-category="brinquedos" data-reveal>
+                    <div class="product-img">
+                        <img src="images/cat_toy.png" alt="Brinquedo Divertido">
+                        <span class="product-badge">Novo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit Mix Diversão</h3>
+                        <p class="product-desc">Conjunto de brinquedos interativos para cães e gatos.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 45,00</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3: Caminha -->
+                <div class="product-card" data-category="acessorios" data-reveal>
+                    <div class="product-img">
+                        <img src="images/bed.png" alt="Caminha Confort">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caminha Nuvem VIP</h3>
+                        <p class="product-desc">O máximo de conforto para o descanso do seu pet.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 150,00</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4: Coleira -->
+                <div class="product-card" data-category="acessorios" data-reveal>
+                    <div class="product-img">
+                        <img src="images/collar.png" alt="Coleira Estilo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coleira Luxo Couro</h3>
+                        <p class="product-desc">Elegância e durabilidade em couro legítimo.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 89,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5: Shampoo -->
+                <div class="product-card" data-category="higiene" data-reveal>
+                    <div class="product-img">
+                        <img src="images/shampoo.png" alt="Shampoo Pet">
+                    </div>
+                    <div class="product-info">
+                        <h3>Shampoo Brilho Intenso</h3>
+                        <p class="product-desc">Limpeza profunda com ph balanceado e cheirinho suave.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 38,00</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 6: Snacks -->
+                <div class="product-card" data-category="alimentacao" data-reveal>
+                    <div class="product-img">
+                        <img src="images/snacks.png" alt="Petiscos Naturais">
+                        <span class="product-badge">Mais Vendido</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Snack Natural Mix</h3>
+                        <p class="product-desc">Livre de conservantes, perfeito para treinamento.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 15,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="logo" style="color: white;">Pattucas 🐾</h2>
+                    <p>Variedade e qualidade para todos os bichinhos.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">i</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pattucas Pet Shop - Todos os direitos reservados. 🐾</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+    <script src="script.js"></script>
+</body>
+</html>
