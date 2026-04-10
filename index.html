@@ -3,124 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pattucas Pet Shop 🐾 | Home</title>
-    <meta name="description" content="O melhor pet shop da região! Oferecemos banho e tosa, consultas veterinárias e muito carinho para seu pet.">
+    <title>Pattucas Pet Shop 🐾 | Excelência em Cuidado Animal</title>
+    <meta name="description" content="O Pattucas Pet Shop é o mais sofisticado da região. Oferecemos serviços premium de banho, tosa, veterinária e produtos exclusivos para o seu melhor amigo.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
 </head>
 <body>
 
-    <!-- Header -->
-    <header id="header">
+    <!-- Header Premium -->
+    <header class="header" id="header">
         <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Pattucas 🐾</a>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="depoimentos.html">Depoimentos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+            <nav class="nav">
+                <a href="index.html" class="logo">Pattucas Pet Shop <span>🐾</span></a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
-                <div class="nav-btns">
-                    <a href="contato.html" class="btn btn-primary d-none-mobile">Agendar agora</a>
-                    <button class="hamburger" id="hamburger">☰</button>
+                
+                <div class="nav-actions">
+                    <a href="contato.html" class="btn btn-premium d-none-mobile">Agendar atendimento</a>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text" data-reveal>
-                    <h1>Onde o carinho e o bem-estar do seu pet <span style="color: var(--primary);">vêm em primeiro lugar</span>.</h1>
-                    <p>Cuidamos do seu melhor amigo com toda a dedicação e amor que ele merece. Profissionais qualificados e um ambiente seguro e divertido.</p>
-                    <div class="hero-actions">
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+        <!-- Hero Section Impactante -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content" data-reveal="left">
+                    <div class="badge">Especialistas em Bem-estar</div>
+                    <h1>Onde a elegância encontra o <span>cuidado animal</span>.</h1>
+                    <p>Oferecemos uma experiência de luxo para o seu melhor amigo, com profissionais apaixonados e um ambiente pensado em cada detalhe.</p>
+                    
+                    <div class="hero-btns">
                         <a href="contato.html" class="btn btn-primary">Agendar atendimento</a>
-                        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-outline">Falar no WhatsApp</a>
-                    </div>
-                    <div class="benefits">
-                        <div class="benefit-item"><span>❤️</span> Atendimento com carinho</div>
-                        <div class="benefit-item"><span>⭐</span> Profissionais qualificados</div>
-                        <div class="benefit-item"><span>🛡️</span> Ambiente seguro</div>
-                        <div class="benefit-item"><span>🦴</span> Produtos de qualidade</div>
+                        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-secondary">Falar no WhatsApp</a>
                     </div>
                 </div>
-                <div class="hero-image" data-reveal>
-                    <img src="images/hero.png" alt="Cachorro e Gato no Pattucas Pet Shop">
+                
+                <div class="hero-visual" data-reveal="right">
+                    <div class="hero-img-wrapper">
+                        <img src="images/premium-hero.png" alt="Cachorro elegante em ambiente premium" class="hero-img">
+                        <div class="floating-card">
+                            <div class="card-icon">🐕</div>
+                            <div class="card-text">
+                                <strong>+5.000</strong>
+                                <small>Pets Felizes</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós (Resumo) -->
+        <section class="about section" id="about">
+            <div class="container about-container">
+                <div class="about-visual" data-reveal="left">
+                    <div class="about-img-grid">
+                        <img src="images/grooming.png" alt="Grooming profissional" class="about-img-1">
+                        <img src="images/vet.png" alt="Consulta veterinária" class="about-img-2">
+                    </div>
+                </div>
+                
+                <div class="about-content" data-reveal="right">
+                    <div class="section-badge">Nossa História</div>
+                    <h2 class="section-title">Mais que um Pet Shop, uma <span>extensão da sua casa</span>.</h2>
+                    <p>No Pattucas Pet Shop 🐾, combinamos técnica avançada com um carinho genuíno. Acreditamos que cada pet é único e merece um tratamento exclusivo.</p>
+                    <a href="sobre.html" class="btn-text">Conheça nossa história →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços (Destaque) -->
+        <section class="services section bg-light" id="services">
+            <div class="container">
+                <div class="section-header" data-reveal="top">
+                    <div class="section-badge">Destaques</div>
+                    <h2 class="section-title">Nossos principais <span>serviços</span>.</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-reveal="bottom">
+                        <div class="card-image-content">
+                            <img src="images/premium-grooming.png" alt="Banho e Tosa">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icon-main">🛁</div>
+                            <h3>Banho & Tosa SPA</h3>
+                            <p>Utilizamos shampoos premium e técnicas de secagem silenciosa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-reveal="bottom" style="transition-delay: 0.1s;">
+                        <div class="card-image-content">
+                            <img src="images/vet.png" alt="Consulta Veterinária">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icon-main">🩺</div>
+                            <h3>Medicina Preventiva</h3>
+                            <p>Consultas detalhadas e planos de saúde personalizados.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-reveal="bottom" style="transition-delay: 0.2s;">
+                        <div class="card-image-content">
+                            <img src="images/accessories.png" alt="Hospedagem">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-icon-main">🏨</div>
+                            <h3>Hotel & Daycare</h3>
+                            <p>Espaço monitorado 24h com áreas climatizadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="servicos.html" class="btn btn-primary">Ver todos os serviços</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Produtos (Destaque) -->
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="section-header" data-reveal="top">
+                    <div class="section-badge">Boutique</div>
+                    <h2 class="section-title">Encontre o melhor <span>para seu pet</span>.</h2>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Produto 1 -->
+                    <div class="product-card" data-category="alimentation">
+                        <div class="product-badge">Premium</div>
+                        <div class="product-img">
+                            <img src="images/dog_food.png" alt="Ração Super Premium">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Alimentação</span>
+                            <h3>Ração Super Premium</h3>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 289,90</span>
+                                <button class="btn-add">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Produto 2 -->
+                    <div class="product-card" data-category="accessories">
+                        <div class="product-badge">Novo</div>
+                        <div class="product-img">
+                            <img src="images/collar.png" alt="Coleira de Couro">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Acessórios</span>
+                            <h3>Coleira Luxury Leather</h3>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 145,00</span>
+                                <button class="btn-add">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Produto 3 -->
+                    <div class="product-card" data-category="hygiene">
+                        <div class="product-badge">Destaque</div>
+                        <div class="product-img">
+                            <img src="images/shampoo.png" alt="Kit Higiene">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Higiene</span>
+                            <h3>Kit Spa em Casa</h3>
+                            <div class="product-footer">
+                                <span class="product-price">R$ 98,00</span>
+                                <button class="btn-add">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="produtos.html" class="btn btn-primary">Explorar loja completa</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo logo-footer">Pattucas Pet Shop <span>🐾</span></a>
+                <p>Referência em cuidado animal e estética pet de alto padrão. O bem-estar do seu melhor amigo é o nosso maior compromisso.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn">Insta</a>
+                    <a href="#" class="social-btn">Fb</a>
+                    <a href="#" class="social-btn">Wa</a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+
+                    <li><a href="contato.html">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📍 RJ, Barra da Tijuca</li>
+                    <li>📞 (21) 99999-9999</li>
+                    <li>✉️ contato@pattucas.com.br</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title" data-reveal>
-                <h2>Por que a Pattucas?</h2>
-                <p>Oferecemos o melhor para o seu companheiro</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-reveal>
-                    <div class="service-icon">🛁</div>
-                    <h3>Banho & Tosa</h3>
-                    <p>Cuidado estético com produtos de primeira linha e muita paciência.</p>
-                    <a href="servicos.html" class="btn btn-outline">Ver todos serviços</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <div class="service-icon">🦴</div>
-                    <h3>Produtos Premium</h3>
-                    <p>As melhores rações e acessórios exclusivos na nossa loja física e online.</p>
-                    <a href="produtos.html" class="btn btn-outline">Ver lojinha</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <div class="service-icon">✨</div>
-                    <h3>Galeria</h3>
-                    <p>Veja como nossos amiguinhos se divertem por aqui!</p>
-                    <a href="galeria.html" class="btn btn-outline">Ver fotos</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h2 class="logo" style="color: white;">Pattucas 🐾</h2>
-                    <p>O melhor pet shop para o seu melhor amigo. Cuidado, carinho e produtos premium em um só lugar.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">f</a>
-                        <a href="#" class="social-link">i</a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Horário</h4>
-                    <p style="color: #9CA3AF;">Seg a Sex: 08:00 - 19:00</p>
-                    <p style="color: #9CA3AF;">Sáb: 09:00 - 16:00</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Pattucas Pet Shop - Todos os direitos reservados. 🐾</p>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pattucas Pet Shop 🐾 - Todos os direitos reservados.</p>
+                <p class="footer-heart">Feito com amor ❤️ pelos animais.</p>
             </div>
         </div>
     </footer>
 
-    <div class="back-to-top" id="backToTop">↑</div>
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">↑</button>
+
     <script src="script.js"></script>
 </body>
 </html>

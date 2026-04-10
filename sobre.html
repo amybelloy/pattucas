@@ -4,99 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós | Pattucas Pet Shop 🐾</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
 </head>
 <body>
 
-    <!-- Header -->
-    <header id="header">
+    <!-- Header Premium -->
+    <header class="header" id="header">
         <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Pattucas 🐾</a>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="depoimentos.html">Depoimentos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+            <nav class="nav">
+                <a href="index.html" class="logo">Pattucas Pet Shop <span>🐾</span></a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
-                <div class="nav-btns">
-                    <a href="contato.html" class="btn btn-primary d-none-mobile">Agendar agora</a>
-                    <button class="hamburger" id="hamburger">☰</button>
+                <div class="nav-actions">
+                    <a href="contato.html" class="btn btn-premium d-none-mobile">Agendar atendimento</a>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </nav>
         </div>
     </header>
 
-    <section class="hero" style="min-height: 40vh; height: auto; padding-bottom: 50px;">
-        <div class="container">
-            <div class="section-title" data-reveal style="margin-top: 100px;">
-                <h1>Sobre a Pattucas</h1>
-                <p>Nossa história de amor pelos animais</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image" data-reveal>
-                    <img src="images/accessories.png" alt="Nossa Loja">
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-reveal="top">
+                    <div class="section-badge">Nossa História</div>
+                    <h2 class="section-title">Paixão por <span>animais</span>, compromisso com a <span>excelência</span>.</h2>
                 </div>
-                <div class="about-text" data-reveal>
-                    <h3>Amor que vai além de um serviço</h3>
-                    <p>O Pattucas Pet Shop nasceu da paixão pelos animais e da vontade de oferecer um serviço diferenciado, focado no respeito e na alegria de cada pet que passa por nossas portas.</p>
-                    <p>Desde nossa fundação em 2018, temos o compromisso de não apenas cuidar da estética, mas de garantir que cada animal se sinta seguro e amado.</p>
-                    
-                    <div class="values">
-                        <div class="value-card">
-                            <i>📍</i>
-                            <h4>Missão</h4>
-                            <p>Transformar a vida dos pets através de cuidado especializado.</p>
-                        </div>
-                        <div class="value-card">
-                            <i>👁️</i>
-                            <h4>Visão</h4>
-                            <p>Ser a maior referência em cuidado animal humanizado.</p>
+                
+                <div class="about-container">
+                    <div class="about-visual" data-reveal="left">
+                        <img src="images/hero.png" alt="Nossa equipe" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                    </div>
+                    <div class="about-content" data-reveal="right">
+                        <p>O Pattucas Pet Shop 🐾 nasceu do sonho de oferecer um ambiente onde os animais fossem tratados com o mesmo amor e cuidado que recebem em casa. Com mais de 10 anos de experiência, nos tornamos referência em estética e saúde animal na região.</p>
+                        <p>Nossa equipe é composta por veterinários, groomers e cuidadores apaixonados, constantemente atualizados com as melhores práticas do mercado internacional.</p>
+                        
+                        <div class="values-grid" style="margin-top: 30px;">
+                            <div class="value-item">
+                                <div class="value-icon">❤️</div>
+                                <div class="value-text">
+                                    <h3>Missão</h3>
+                                    <p>Garantir o bem-estar e a felicidade de cada pet através de serviços humanizados.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">👁️</div>
+                                <div class="value-text">
+                                    <h3>Visão</h3>
+                                    <p>Ser o pet shop mais confiável e inovador do Brasil.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">💎</div>
+                                <div class="value-text">
+                                    <h3>Valores</h3>
+                                    <p>Ética, transparência, carinho e excelência técnica.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h2 class="logo" style="color: white;">Pattucas 🐾</h2>
-                    <p>O melhor pet shop para o seu melhor amigo. Cuidado, carinho e produtos premium em um só lugar.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">f</a>
-                        <a href="#" class="social-link">i</a>
+        </section>
+        
+        <section class="section bg-light">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">Números que nos <span>orgulham</span></h2>
+                <div class="stats-row" style="justify-content: center; gap: 80px; margin-top: 40px;">
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Banhos Realizados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5k+</span>
+                        <span class="stat-label">Clientes Fiéis</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Prêmios de Qualidade</span>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo logo-footer">Pattucas Pet Shop <span>🐾</span></a>
+                <p>Referência em cuidado animal e estética pet de alto padrão. O bem-estar do seu melhor amigo é o nosso maior compromisso.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn">Insta</a>
+                    <a href="#" class="social-btn">Fb</a>
+                    <a href="#" class="social-btn">Wa</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Pattucas Pet Shop - Todos os direitos reservados. 🐾</p>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="galeria.html">Galeria</a></li>
+
+                    <li><a href="contato.html">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📍 RJ, Barra da Tijuca</li>
+                    <li>📞 (21) 99999-9999</li>
+                    <li>✉️ contato@pattucas.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Pattucas Pet Shop 🐾 - Todos os direitos reservados.</p>
+                <p class="footer-heart">Feito com amor ❤️ pelos animais.</p>
             </div>
         </div>
     </footer>
 
-    <div class="back-to-top" id="backToTop">↑</div>
     <script src="script.js"></script>
 </body>
 </html>
